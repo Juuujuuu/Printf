@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   printf.c                                           :+:      :+:    :+:   */
+/*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: julmarti <julmarti@42.student.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/09 20:36:05 by julmarti          #+#    #+#             */
-/*   Updated: 2021/09/08 16:40:08 by julmarti         ###   ########.fr       */
+/*   Updated: 2021/09/23 23:29:19 by julmarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 #include <stdlib.h> // lib pour malloc et free 
 #include <unistd.h> // lib pour write
 
-int ft_printf(const char*, ...)
+int ft_printf(const char *, ...)
 {
     // tant que je n'ai pas un %, je print ce qui est lu
 
