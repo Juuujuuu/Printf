@@ -1,31 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   functions.c                                        :+:      :+:    :+:   */
+/*   conversion.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: julmarti <julmarti@42.student.fr>          +#+  +:+       +#+        */
+/*   By: julmarti <julmarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/27 17:05:37 by julmarti          #+#    #+#             */
-/*   Updated: 2021/09/27 17:51:09 by julmarti         ###   ########.fr       */
+/*   Updated: 2021/09/29 18:02:14 by julmarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int     conversion()
+int     parser()
 {
-    if (format[i] == 'c')
-        ft_putchar(format[i]);
-    if (i == 's')
-        ft_putstr(format);
-    if (i == 'p')
-        // ft_itoa
-    if (i == 'd' || i == 'i')
-        ft_putnbr(format[i]);
-    if (i == 'u')
-        ft_putnbr(format[i]);
-    if (i == 'x')
-        // ft_itoa 
+    
 }
 
 

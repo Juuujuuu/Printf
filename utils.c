@@ -3,14 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   utils.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: julmarti <julmarti@42.student.fr>          +#+  +:+       +#+        */
+/*   By: julmarti <julmarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/27 15:04:04 by julmarti          #+#    #+#             */
-/*   Updated: 2021/09/27 15:04:26 by julmarti         ###   ########.fr       */
+/*   Updated: 2021/09/29 15:24:30 by julmarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h> // lib pour write
+
+#include "ft_printf.h"
 
 void    ft_putchar(char c)
 {
