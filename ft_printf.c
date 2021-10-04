@@ -6,7 +6,7 @@
 /*   By: julmarti <julmarti@42.student.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/09 20:36:05 by julmarti          #+#    #+#             */
-/*   Updated: 2021/09/30 17:20:33 by julmarti         ###   ########.fr       */
+/*   Updated: 2021/10/04 20:57:22 by julmarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,24 +84,11 @@ void    ft_putnbr_hexa_min(int n)
 		ft_putchar(nb % 16 + 87);
 }
 
-void    ft_putnbr_hexa_maj(int n)
+void     ft_toupper(unsigned int c)
 {
-    long long neg; 
-    long long nb;
-
-    neg = 4294967296;
-    nb = n;
-    if (nb < 0)
-    {
-        nb = -nb;
-        nb = neg - nb;
-    }
-    if (nb > 15)
-		ft_putnbr_hexa_min(nb / 16);
-	if ((nb % 16) <= 9) // si le reste de la division par 16 est inférieur à 10, alors c'est un chiffre
-		ft_putchar(nb % 16 + 48);
-	if ((nb % 16) > 9) // si le reste de la divsion par 16 est supérieur à 9,alors c'est une lettre
-		ft_putchar(nb % 16 + 87);
+        if (c >= 97 && c <= 122)
+                c = c - 32;
+        ft_putchar(c);
 }
 
 void    ft_pointer_hexa(int n)
@@ -149,6 +136,11 @@ int ft_printf(const char *format, ...)
         if (format[index] == '%')
         {
             index++; // je skip le signe % 
+            if (format[index] == '%')
+            {
+                ft_putchar('%');
+                index++;
+            }
             if (format[index] == 'c') 
             {
                 c = va_arg(parameters, int);
@@ -188,7 +180,8 @@ int ft_printf(const char *format, ...)
             if (format[index] == 'X') // hexadecimal non signe - X -> ABCDEF
             {
                 X = va_arg(parameters, unsigned int);
-                ft_putnbr_hexa_maj(X);
+                // fonction a add
+                ft_toupper(X);
                 index++;
             }
         }
@@ -199,17 +192,16 @@ int ft_printf(const char *format, ...)
 
 /*
 TO DO : 
-1 - comprendre la conversion decimale <-> hexadecimale 
-2 _ Faire un ft_putnbr hexadecimal MAJ et MIN
+1 - Refaire la fonction pour X 
 
 Rappel : En utilisant l’Hexadécimal (16) 
 je vais effectuer une suite de division par 16 jusqu’à avoir un résultat nul.
 Je vais utiliser la division avec reste, ou modulo.
 https://www.laintimes.com/calculer-en-hexadecimal-base-16/
 
-2 - Faire une fonction pour les flags restants (p, d). ITOA ? 
-3 - Decouper et organiser le code pour respecter la norme 
-4 - Tester avec pleins de valeurs
+3 - Faire une fonction pour les flags restants (p, d). ITOA ? 
+4 - Decouper et organiser le code pour respecter la norme 
+5 - Tester avec pleins de valeurs
 
 // Cette fonction permet de retourner le nb de caracteres affiches 
 */

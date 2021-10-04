@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: julmarti <julmarti@student.42.fr>          +#+  +:+       +#+         #
+#    By: julmarti <julmarti@42.student.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/02/09 20:36:05 by julmarti          #+#    #+#              #
-#    Updated: 2021/09/29 18:01:30 by julmarti         ###   ########.fr        #
+#    Updated: 2021/10/02 14:45:30 by julmarti         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,9 +15,6 @@ NAME = libftprintf.a
 		
 SRCS =	ft_printf.c \
 				
-			
-		
-		
 
 CC = gcc
 
