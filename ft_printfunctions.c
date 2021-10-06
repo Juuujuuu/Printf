@@ -6,7 +6,7 @@
 /*   By: julmarti <julmarti@42.student.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/06 17:43:25 by julmarti          #+#    #+#             */
-/*   Updated: 2021/10/06 17:45:36 by julmarti         ###   ########.fr       */
+/*   Updated: 2021/10/06 18:18:28 by julmarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void    ft_printchar(int index, va_list parameters)
 }
 void    ft_printstr(int index, va_list parameters)
 {
-    char*s;
+    char *s;
 
     s = va_arg(parameters, char *);
     ft_putstr(s);
@@ -48,7 +48,7 @@ void ft_printpointer(int index, va_list parameters)
 {
     unsigned long p;
 
-    p = (unsigned long) va_arg(parameters, void *);
+    p = (unsigned long)va_arg(parameters, void *);
     ft_putstr("0x7fff");
     ft_putnbr_hexa_min(p);
     index++;
