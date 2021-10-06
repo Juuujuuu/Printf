@@ -6,7 +6,7 @@
 /*   By: julmarti <julmarti@42.student.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/27 15:08:05 by julmarti          #+#    #+#             */
-/*   Updated: 2021/10/06 13:23:43 by julmarti         ###   ########.fr       */
+/*   Updated: 2021/10/06 17:46:30 by julmarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,5 +29,14 @@ typedef struct s_printf
 {
     va_list parameters;
 }               t_printf;
+
+void    ft_parser(const char *format, int index, va_list parameters);
+void    ft_printchar(int index, va_list parameters);
+void    ft_printstr(int index, va_list parameters);
+void    ft_printhex_min(int index, va_list parameters);
+void    ft_printhex_maj(int index, va_list parameters);
+void    ft_printpointer(int index, va_list parameters);
+void    ft_printunsigned(int index, va_list parameters);
+void    ft_printnumber(int index, va_list parameters);
 
 #endif
