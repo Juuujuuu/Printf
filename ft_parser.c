@@ -6,7 +6,7 @@
 /*   By: julmarti <julmarti@42.student.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/06 16:08:55 by julmarti          #+#    #+#             */
-/*   Updated: 2021/10/06 17:45:15 by julmarti         ###   ########.fr       */
+/*   Updated: 2021/10/06 18:34:52 by julmarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,20 +23,20 @@ void ft_parser(const char *format, int index, va_list parameters)
         ft_printchar(index, parameters);
 
     if (format[index] == 's')
-        ft_printstr (index, parameters);
+        ft_printstr(index, parameters);
 
     if (format[index] == 'd' || format[index] == 'i')
-        ft_printnumber (index, parameters);
+        ft_printnumber(index, parameters);
 
     if (format[index] == 'u') 
-        ft_printunsigned (index, parameters);
+        ft_printunsigned(index, parameters);
         
     if (format[index] == 'p')
-        ft_printpointer (index, parameters);
+        ft_printpointer(index, parameters);
 
     if (format[index] == 'x')
-        ft_printhex_min (index, parameters);
+        ft_printhex_min(index, parameters);
 
     if (format[index] == 'X')
-        ft_printhex_maj (index, parameters);
+        ft_printhex_maj(index, parameters);
 }

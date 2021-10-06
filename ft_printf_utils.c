@@ -6,7 +6,7 @@
 /*   By: julmarti <julmarti@42.student.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/27 15:04:04 by julmarti          #+#    #+#             */
-/*   Updated: 2021/10/06 15:26:30 by julmarti         ###   ########.fr       */
+/*   Updated: 2021/10/06 18:31:11 by julmarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,8 +95,8 @@ void    ft_putnbr_hexa_maj(int n)
     }
     if (nb > 15)
 		ft_putnbr_hexa_maj(nb / 16);
-	if ((nb % 16) <= 9) // si le reste de la division par 16 est inférieur à 10, alors c'est un chiffre
+	if ((nb % 16) <= 9) 
 		ft_putchar(nb % 16 + 48);
-	if ((nb % 16) > 9) // si le reste de la divsion par 16 est supérieur à 9,alors c'est une lettre
+	if ((nb % 16) > 9) 
 		ft_putchar(nb % 16 + 55);
 }
