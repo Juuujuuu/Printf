@@ -6,7 +6,7 @@
 #    By: julmarti <julmarti@42.student.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/02/09 20:36:05 by julmarti          #+#    #+#              #
-#    Updated: 2021/10/02 14:45:30 by julmarti         ###   ########.fr        #
+#    Updated: 2021/10/06 13:27:41 by julmarti         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,8 +14,8 @@
 NAME = libftprintf.a
 		
 SRCS =	ft_printf.c \
+		ft_printf_utils.c
 				
-
 CC = gcc
 
 AR = ar -rc
