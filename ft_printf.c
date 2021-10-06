@@ -6,7 +6,7 @@
 /*   By: julmarti <julmarti@42.student.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/09 20:36:05 by julmarti          #+#    #+#             */
-/*   Updated: 2021/10/06 18:37:13 by julmarti         ###   ########.fr       */
+/*   Updated: 2021/10/06 20:05:27 by julmarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int ft_printf(const char *format, ...)
 {
     va_list parameters;
-    va_start (parameters, format);
+    va_start(parameters, format);
     int index;
 
     index = 0;
@@ -30,7 +30,7 @@ int ft_printf(const char *format, ...)
             ft_putchar(format[index]);  
         index++;
     }
-    va_end (parameters);
+    va_end(parameters);
     return (index);
 }
 
