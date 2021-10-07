@@ -6,7 +6,7 @@
 /*   By: julmarti <julmarti@42.student.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/09 20:36:05 by julmarti          #+#    #+#             */
-/*   Updated: 2021/10/06 20:05:27 by julmarti         ###   ########.fr       */
+/*   Updated: 2021/10/07 11:41:18 by julmarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,22 +17,26 @@ int ft_printf(const char *format, ...)
     va_list parameters;
     va_start(parameters, format);
     int index;
+    int count;
 
     index = 0;
+    count = 0;
     while(format[index] != '\0')
    {
         if (format[index] == '%')
         {
             index++;
-            ft_parser(format, index, parameters);
+            count = count + ft_parser(format, index, parameters);
         }
         else
-            ft_putchar(format[index]);  
+        {
+            ft_putchar(format[index]);
+            count++;
+        }
         index++;
     }
     va_end(parameters);
-    return (index);
+    return (count);
 }
 
-
-
+// to do : voir comment tout caster pour arriver à avoir un compteur que l'on retourne à la fin

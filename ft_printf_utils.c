@@ -6,7 +6,7 @@
 /*   By: julmarti <julmarti@42.student.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/27 15:04:04 by julmarti          #+#    #+#             */
-/*   Updated: 2021/10/06 18:31:11 by julmarti         ###   ########.fr       */
+/*   Updated: 2021/10/07 11:40:45 by julmarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,15 @@
 void    ft_putchar(char c)
 {
     write(1, &c, 1);
+}
+
+int     ft_strlen(char *s)
+{
+    int i;
+    i = 0;
+    while (s[i] != '\0')
+        i++;
+    return(i);
 }
 
 void    ft_putstr(char *s)
