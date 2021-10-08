@@ -64,7 +64,7 @@ int ft_printpointer(va_list parameters)
 
     count = 0;
     p = (unsigned long)va_arg(parameters, void *);
-    ft_putstr("0x7fff");
+    ft_putstr("0x7ff");
     ft_putnbr_hexa_min(p);
     count++;
     return(count);

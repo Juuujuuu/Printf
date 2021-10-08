@@ -39,4 +39,5 @@ int ft_printf(const char *format, ...)
     return (count);
 }
 
-// to do : voir comment tout caster pour arriver à avoir un compteur que l'on retourne à la fin
+// to do : check avec les testeurs
+// verifier comment print le debut des adresses pour %p

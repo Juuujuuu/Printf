@@ -22,8 +22,8 @@ int main()
     ft_printf("Mon printf avec c: %c %c %c\n", '0', '0', '1');
     printf("Test avec le vrai %c%c%c*\n", '\0', '1', 1);
     ft_printf("Test avec le mien %c%c%c*\n", '\0', '1', 1);
-    printf("Le vrai printf avec d: %d\n", -42);
-    ft_printf("Mon printf avec d: %d\n", -42);
+    printf("Le vrai printf avec d: %d\n", 4202);
+    ft_printf("Mon printf avec d: %d\n", 4202);
     printf("Le vrai printf avec i: %i\n", -42);
     ft_printf("Mon printf avec i: %i\n", -42);
     printf("Le vrai printf avec u: %u\n", 1000);
