@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printfunctions.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: julmarti <julmarti@42.student.fr>          +#+  +:+       +#+        */
+/*   By: julmarti <julmarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/06 17:43:25 by julmarti          #+#    #+#             */
-/*   Updated: 2021/10/07 11:40:49 by julmarti         ###   ########.fr       */
+/*   Updated: 2021/10/08 14:03:00 by julmarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,9 @@ int    ft_printchar(va_list parameters)
 
     count = 0 ;
     c = va_arg(parameters, int);
-    count = ft_putchar(c);
+    ft_putchar(c);
+    count++;
+    return (count);
 }
 int    ft_printstr(va_list parameters)
 {
@@ -29,7 +31,9 @@ int    ft_printstr(va_list parameters)
 
     count = 0 ;
     s = va_arg(parameters, char *);
-    count = ft_putstr(s);
+    ft_putstr(s);
+    count = ft_strlen(s);
+    return (count);
 }
 int    ft_printhex_min(va_list parameters)
 {
@@ -38,7 +42,9 @@ int    ft_printhex_min(va_list parameters)
 
     count = 0 ;    
     x = va_arg(parameters, unsigned int);
-    count = ft_putnbr_hexa_min(x);
+    ft_putnbr_hexa_min(x);
+    count++;
+    return(count);
 }
 int    ft_printhex_maj(va_list parameters)
 {
@@ -47,17 +53,21 @@ int    ft_printhex_maj(va_list parameters)
 
     count = 0 ;
     X = va_arg(parameters, unsigned int);
-    count = ft_putnbr_hexa_maj(X);
+    ft_putnbr_hexa_maj(X);
+    count++;
+    return(count);
 }
 int ft_printpointer(va_list parameters)
 {
     unsigned long p;
     int count;
 
-    count = 0 ;
+    count = 0;
     p = (unsigned long)va_arg(parameters, void *);
     ft_putstr("0x7fff");
-    count = ft_putnbr_hexa_min(p);
+    ft_putnbr_hexa_min(p);
+    count++;
+    return(count);
 }
 
 int    ft_printunsigned(va_list parameters)
@@ -67,7 +77,9 @@ int    ft_printunsigned(va_list parameters)
 
     count = 0 ;   
     u = va_arg(parameters, unsigned int);
-    count = ft_unsigned(u);
+    ft_unsigned(u);
+    count++;
+    return(count);
 }
 
 int    ft_printnumber(va_list parameters)
@@ -78,4 +90,5 @@ int    ft_printnumber(va_list parameters)
     count = 0 ;
     d = va_arg(parameters, int);
     count = ft_putnbr(d);
+    return(count);
 }

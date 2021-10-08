@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf_utils.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: julmarti <julmarti@42.student.fr>          +#+  +:+       +#+        */
+/*   By: julmarti <julmarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/27 15:04:04 by julmarti          #+#    #+#             */
-/*   Updated: 2021/10/07 11:40:45 by julmarti         ###   ########.fr       */
+/*   Updated: 2021/10/08 14:03:57 by julmarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,12 +37,16 @@ void    ft_putstr(char *s)
         i++;
     }
 }
-void    ft_putnbr(int n)
+int    ft_putnbr(int n)
 {
+    int count;
+
+    count = 0;
     if (n == -2147483648)
         ft_putstr("-2147483648");
     else 
     {
+        count++;
         if (n < 0)
         {
             ft_putchar('-');
@@ -52,6 +56,7 @@ void    ft_putnbr(int n)
             ft_putnbr(n / 10);
         ft_putchar(n % 10 + '0');
     }
+    return (count);
 }
 void    ft_unsigned(int n)
 {

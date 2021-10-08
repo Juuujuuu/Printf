@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: julmarti <julmarti@42.student.fr>          +#+  +:+       +#+        */
+/*   By: julmarti <julmarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/27 15:08:05 by julmarti          #+#    #+#             */
-/*   Updated: 2021/10/07 11:09:19 by julmarti         ###   ########.fr       */
+/*   Updated: 2021/10/08 13:55:46 by julmarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,9 @@
 
 int     ft_printf(const char *format, ...);
 void    ft_putchar(char c);
+int     ft_strlen(char *s);
 void    ft_putstr(char *s);
-void    ft_putnbr(int n);
+int     ft_putnbr(int n);
 void    ft_putnbr_hexa_min(int n);
 void    ft_putnbr_hexa_maj(int n);
 void    ft_unsigned(int n);
