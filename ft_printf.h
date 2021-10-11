@@ -6,17 +6,17 @@
 /*   By: julmarti <julmarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/27 15:08:05 by julmarti          #+#    #+#             */
-/*   Updated: 2021/10/11 16:44:41 by julmarti         ###   ########.fr       */
+/*   Updated: 2021/10/11 17:35:54 by julmarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
-#define FT_PRINTF_H
+# define FT_PRINTF_H
 
-#include <stdarg.h>
-#include <unistd.h>
-#include <stdlib.h>
-#include <limits.h>
+# include <stdarg.h>
+# include <unistd.h>
+# include <stdlib.h>
+# include <limits.h>
 
 int		ft_printf(const char *format, ...);
 void	ft_putchar(char c);

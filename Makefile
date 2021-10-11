@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: julmarti <julmarti@42.student.fr>          +#+  +:+       +#+         #
+#    By: julmarti <julmarti@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/02/09 20:36:05 by julmarti          #+#    #+#              #
-#    Updated: 2021/10/06 18:43:06 by julmarti         ###   ########.fr        #
+#    Updated: 2021/10/11 17:25:35 by julmarti         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,9 +14,11 @@
 NAME = libftprintf.a
 		
 SRCS =	ft_printf.c \
-		ft_printf_utils.c \
-		ft_parser.c \
-		ft_printfunctions.c
+				ft_printf_utils.c \
+				ft_printf_utils_bis.c \
+				ft_printf_functions.c\
+				ft_printf_functions_bis.c \
+				ft_parser.c
 				
 CC = gcc
 
@@ -35,7 +37,7 @@ $(NAME) : $(OBJ)
 	$(AR) $(NAME) $(OBJ)
 
 clean:
-	rm -f $(OBJ) $(OBJB)
+	rm -f $(OBJ)
 
 fclean: clean
 	rm -f $(NAME)
