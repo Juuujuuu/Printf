@@ -6,7 +6,7 @@
 /*   By: julmarti <julmarti@42.student.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/09 20:36:05 by julmarti          #+#    #+#             */
-/*   Updated: 2021/10/11 11:29:38 by julmarti         ###   ########.fr       */
+/*   Updated: 2021/10/11 14:29:23 by julmarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,5 +39,4 @@ int ft_printf(const char *format, ...)
     return (count);
 }
 
-// to do : check avec les testeurs
-// verifier comment print le debut des adresses pour %p
+// to do : norme

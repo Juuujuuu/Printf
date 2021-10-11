@@ -6,7 +6,7 @@
 /*   By: julmarti <julmarti@42.student.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/06 17:43:25 by julmarti          #+#    #+#             */
-/*   Updated: 2021/10/11 14:23:26 by julmarti         ###   ########.fr       */
+/*   Updated: 2021/10/11 14:37:21 by julmarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,16 +70,8 @@ int ft_printpointer(va_list parameters)
 
     count = 0;
     p = (unsigned long)va_arg(parameters, void *);
-    if (p == 0)
-    {
-        ft_putstr("(nil)");
-        count = 5;
-    }
-    else
-    { 
-        ft_putstr("0x");
-        count = 2 + ft_putnbr_hexa_pointer(p);
-    }
+    ft_putstr("0x");
+    count = 2 + ft_putnbr_hexa_pointer(p);
     return(count);
 }
 
