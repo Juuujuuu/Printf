@@ -6,7 +6,7 @@
 /*   By: julmarti <julmarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/06 17:43:25 by julmarti          #+#    #+#             */
-/*   Updated: 2021/10/11 17:08:56 by julmarti         ###   ########.fr       */
+/*   Updated: 2021/10/11 17:30:34 by julmarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ int	ft_printstr(va_list parameters)
 	if (s == NULL)
 	{
 		ft_putstr("(null)");
-		count = 7;
+		count = 6;
 	}
 	else
 	{

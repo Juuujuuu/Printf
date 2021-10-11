@@ -6,7 +6,7 @@
 /*   By: julmarti <julmarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/27 15:28:05 by julmarti          #+#    #+#             */
-/*   Updated: 2021/10/11 17:05:13 by julmarti         ###   ########.fr       */
+/*   Updated: 2021/10/11 17:32:07 by julmarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,13 +20,12 @@ int	main()
 	void *ptdr = &c;
 	int ret;
 	int ret2;
-	char *test = NULL;
 
-	ret = printf("Test backslash 0 avec le vrai prinft: %c\n", '\0');
-	ret2 = ft_printf("Test backslash avec mon printf: %c\n", '\0');
+	ret = printf("prinft: %c\n", '\0');
+	ret2 = ft_printf("printf: %c\n", '\0');
 	printf("\n\nRet avec backslash0 : [%d] [%d]\n\n", ret, ret2);
-	ret = printf("Test str null avec le vrai : %s\n", test);
-	ret2 = ft_printf("Test str null avec le mien: %s\n", test);
+	ret = printf("Test str null avec le vrai: %s\n", NULL);
+	ret2 = ft_printf("Test str null avec le mien: %s\n", NULL);
 	printf("\n\n Ret avec string null: [%d] [%d]\n\n", ret, ret2);
 	// AUTRE
 	printf("Le vrai printf avec c: %c %c %c\n", '0', '0', '1');
