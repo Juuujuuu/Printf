@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: julmarti <julmarti@student.42.fr>          +#+  +:+       +#+        */
+/*   By: julmarti <julmarti@42.student.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/27 15:08:05 by julmarti          #+#    #+#             */
-/*   Updated: 2021/10/08 13:55:46 by julmarti         ###   ########.fr       */
+/*   Updated: 2021/10/11 11:29:48 by julmarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ int    ft_putnbr(int n);
 int    ft_putnbr_hexa_min(int n);
 int    ft_putnbr_hexa_maj(int n);
 int    ft_unsigned(int n);
+int    ft_putnbr_hexa_pointer(int n);
 
 typedef struct s_printf
 {

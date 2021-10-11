@@ -6,7 +6,7 @@
 /*   By: julmarti <julmarti@42.student.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/06 16:08:55 by julmarti          #+#    #+#             */
-/*   Updated: 2021/10/07 11:24:34 by julmarti         ###   ########.fr       */
+/*   Updated: 2021/10/11 10:40:55 by julmarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,10 @@ int ft_parser(const char *format, int index, va_list parameters)
     
     count = 0;
     if (format[index] == '%')
+    {   
         ft_putchar('%');
+        count = 1;
+    }
     if (format[index] == 'c') 
        count = ft_printchar(parameters);
     if (format[index] == 's')
