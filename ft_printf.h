@@ -6,7 +6,7 @@
 /*   By: julmarti <julmarti@42.student.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/27 15:08:05 by julmarti          #+#    #+#             */
-/*   Updated: 2021/10/11 11:29:48 by julmarti         ###   ########.fr       */
+/*   Updated: 2021/10/11 14:16:44 by julmarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,8 @@
 
 #include <stdarg.h> // pour les macros va 
 #include <unistd.h> // lib pour write
-#include <stdlib.h> // lib pour malloc et free 
+#include <stdlib.h> // lib pour malloc et free
+#include <limits.h> // pour les limites des types
 
 int    ft_printf(const char *format, ...);
 void   ft_putchar(char c);
@@ -25,7 +26,7 @@ int    ft_putnbr(int n);
 int    ft_putnbr_hexa_min(int n);
 int    ft_putnbr_hexa_maj(int n);
 int    ft_unsigned(int n);
-int    ft_putnbr_hexa_pointer(int n);
+int    ft_putnbr_hexa_pointer(unsigned long n);
 
 typedef struct s_printf
 {

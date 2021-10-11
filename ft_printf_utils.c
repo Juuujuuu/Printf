@@ -6,7 +6,7 @@
 /*   By: julmarti <julmarti@42.student.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/27 15:04:04 by julmarti          #+#    #+#             */
-/*   Updated: 2021/10/11 11:30:26 by julmarti         ###   ########.fr       */
+/*   Updated: 2021/10/11 14:16:34 by julmarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -143,20 +143,13 @@ int    ft_putnbr_hexa_maj(int n)
 		ft_putchar(nb % 16 + 55);
     return(count);
 }
-int    ft_putnbr_hexa_pointer(int n)
+int    ft_putnbr_hexa_pointer(unsigned long n)
 {
-    long long neg; 
-    long long nb;
+    unsigned long nb;
     int       count;
 
-    neg = 4294967296;
     nb = n;
     count = 1;
-    if (nb < 0)
-    {
-        nb = -nb;
-        nb = neg - nb;
-    }
     if (nb > 15)
 	{
         count = ft_putnbr_hexa_pointer(nb / 16);

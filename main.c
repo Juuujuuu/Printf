@@ -6,7 +6,7 @@
 /*   By: julmarti <julmarti@42.student.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/27 15:28:05 by julmarti          #+#    #+#             */
-/*   Updated: 2021/10/11 10:49:19 by julmarti         ###   ########.fr       */
+/*   Updated: 2021/10/11 14:14:32 by julmarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 
 int main()
 {
-    char c;
+    unsigned long c = 0;
     void *ptdr = &c;
 
     printf("Le vrai printf avec c: %c %c %c\n", '0', '0', '1');
